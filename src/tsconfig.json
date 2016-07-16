@@ -1,5 +1,7 @@
 {
   "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false },
   "compilerOptions": {
     "declaration": false,
     "emitDecoratorMetadata": true,
@@ -14,6 +16,12 @@
     "target": "es5",
     "inlineSources": true
   },
+
+  "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
 
   "files": [
     "main.ts",
